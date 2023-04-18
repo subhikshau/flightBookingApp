@@ -1,0 +1,30 @@
+<app-bg></app-bg>
+<br><br>
+<div></div>
+<table>
+    <thead>
+      <tr>
+        <th>User Name</th>
+        <th>Flight Name</th>
+        <th>Flight Number</th>
+        <th>Departure Airport</th>
+        <th>Arrival Airport</th>
+        <th>Departure Date</th>
+        <th>Departure Time</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of bookings | async">
+        <td>{{ booking.Name }}</td>
+        <td>{{ booking.flightName }}</td>
+        <td>{{ booking.flightNumber }}</td>
+        <td>{{ booking.departureAirport }}</td>
+        <td>{{ booking.arrivalAirport }}</td>
+        <td>{{ booking.departureData }}</td>
+        <td>{{ booking.departureTime }}</td>
+        <td>{{ booking.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

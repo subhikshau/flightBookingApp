@@ -1,0 +1,25 @@
+<app-bg></app-bg>
+<div class="login-block">
+    <div class="container">
+        <div class="row">
+            <div class="login">
+                <h2 class="text-centre">Admin Login</h2>
+                <form class="login-form" action="" >
+                    <div class="form-group">
+                        <label for="email" class="email">Email:</label>
+                        <input type="email" class="form-control" name="email" [(ngModel)]="email" >
+                        
+                    <div class="form-group">
+                        <label for="password" class="password">Password</label>
+                        <input type="password" class="form-control" name="password"[(ngModel)]="password">
+                        
+                    </div>
+                    <input type="submit" class="btn btn-login" value="Login" (click)="alogin(email,password)">
+                    <div class="col"></div>
+                   
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<body>
+    <div class="wrap">
+        <div class="searchTerm">
+            <label for="departureAirport">Departure Place:</label>
+            <select [(ngModel)]="departureAirport">
+                <option value="">Select Departure Airport</option>
+                <option value="DEL">New Delhi</option>
+                <option value="BAN">Bengaluru</option>
+                <option value="CHE">Chennai</option>
+            </select>
+        </div>
+        <div>
+            <label for="arrivalAirport">Arrival Place:</label>
+            <select [(ngModel)]="arrivalAirport">
+                <option value="">Select Arrival Airport</option>
+                <option value="DEL">New Delhi</option>
+                <option value="BAN">Bengaluru</option>
+                <option value="CHE">Chennai</option>
+            </select>
+        </div>
+      <div>
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" [(ngModel)]="departureData">
+      </div>
+      <div>
+        <label for="departureTime">Departure Time:</label>
+        <input type="time" [(ngModel)]="departureTime">
+      </div>
+      
+      <button  class="btn btn-filter" (click)="filterFlights(departureAirport,arrivalAirport,departureData,  departureTime )">Filter Flights</button>
+    </div>
+</body>
+<table>
+  <thead>
+    <tr>
+      <th>Flight Name</th>
+      <th>Flight Number</th>
+      <th>Departure Airport</th>
+      <th>Arrival Airport</th>
+      <th>Departure Date</th>
+      <th>Departure Time</th>
+      <th>Arrival Date</th>
+      <th>Arrival Time</th>
+      <th>Price</th>
+      <th>Seat Availability</th>
+      <th>Book</th>
+    </tr>
+  </thead>   
+<tr *ngFor="let flight of filteredFlights">
+  <td>{{ flight.flightName }}</td>
+  <td>{{ flight.flightNumber }}</td>
+  <td>{{ flight.departureAirport }}</td>
+  <td>{{ flight.arrivalAirport }}</td>
+  <td>{{ flight.departureData }}</td>
+  <td>{{ flight.departureTime }}</td>
+  <td>{{ flight.arrivalData }}</td>
+  <td>{{ flight.arrivalTime }}</td>
+  <td>{{ flight.price }}</td>
+  <td>{{ flight.seatAvailability }}</td>
+  <td><button type="submit" class="btn btn-book" (click)="onBookClick(flight)">Book</button></td>
+</tr>
+</table>

@@ -1,0 +1,63 @@
+.table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+tr:nth-of-type(even) { 
+        background: darkgray; 
+}
+    
+
+th { 
+	background: gray; 
+	color: white; 
+	font-weight: bold; 
+	}
+th:hover{
+    background-color: #000;
+}
+td, th { 
+	padding: 10px; 
+	border: 2px solid black; 
+	text-align: left; 
+	font-size: 18px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	}
+
+@media 
+only screen and (max-width: 600px),
+(min-device-width: 668px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 60%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	
+
+}

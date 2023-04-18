@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<section class="register-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sec">
+                <h2 class="header">Register Now</h2>
+                <form class="register-form" method="post" action="" >
+                    <div class="input-forms">
+                        <label for="name" class="name">Name:</label>
+                        <input type="text" class="form-control" name="name"[(ngModel)]="name" >
+                    </div>
+                    <div class="input-forms">
+                        <label for="name" class="name">Email:</label>
+                        <input type="text" class="form-control" name="email"[(ngModel)]="email" >
+    
+                    </div>
+                    <div class="input-forms">
+                        <label for="name" class="name">Password:</label>
+                        <input type="text" class="form-control" name="password"[(ngModel)]="password" >
+                    </div>
+                    <input type="submit" class="btn btn-login float-right" value="Register" (click)="signup()">
+                    <div class="col"></div>
+                    <div class="input-forms">
+                        Already have account ? Please <a class="nav-link" routerLink="/user-login" 
+                        >Sign Up </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

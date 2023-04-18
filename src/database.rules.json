@@ -1,0 +1,9 @@
+{
+    "rules": {
+      "flightDetails": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+  }
+  

@@ -1,0 +1,54 @@
+<app-bg></app-bg>
+<div class="container-1">
+    <div class="container">
+        <h2 class="text-center" >Flight Details</h2>
+        <body>
+            <form class="flight-class" (submit)="addFlight(flightNumberInput.value, flightNameInput.value, departureAirportInput.value, arrivalAirportInput.value, departureDateInput.value, departureTimeInput.value, arrivalDateInput.value, arrivalTimeInput.value,priceInput.value, seatAvailabilityInput.value)">
+                <div class="form-group">
+                  <label for="flightNumberInput">Flight Number:</label>
+                  <input type="text" class="form-control" id="flightNumberInput" #flightNumberInput>
+                </div>
+                <div class="form-group">
+                    <label for="flightNameInput">Flight Name:</label>
+                    <input type="text" class="form-control" id="flightNameInput" #flightNameInput>
+                  </div>
+                <div class="form-group">
+                  <label for="departureAirportInput">Departure Airport:</label>
+                  <input type="text" class="form-control" id="departureAirportInput" #departureAirportInput>
+                </div>
+                <div class="form-group">
+                  <label for="arrivalAirportInput">Arrival Airport:</label>
+                  <input type="text" class="form-control" id="arrivalAirportInput" #arrivalAirportInput>
+                </div>
+                <div class="form-group">
+                  <label for="departureDateInput">Departure Date:</label>
+                  <input type="date" class="form-control" id="departureDateInput" #departureDateInput>
+                </div>
+                <div class="form-group">
+                  <label for="departureTimeInput">Departure Time:</label>
+                  <input type="time" class="form-control" id="departureTimeInput" #departureTimeInput>
+                </div>
+                <div class="form-group">
+                  <label for="arrivalDateInput">Arrival Date:</label>
+                  <input type="date" class="form-control" id="arrivalDateInput" #arrivalDateInput>
+                </div>
+                <div class="form-group">
+                  <label for="arrivalTimeInput">Arrival Time:</label>
+                  <input type="time" class="form-control" id="arrivalTimeInput" #arrivalTimeInput>
+                </div>
+                <div class="form-group">
+                    <label for="priceInput">Cost:</label>
+                    <input type="text" class="form-control" id="priceInput" #priceInput>
+                  </div>
+                  <div class="form-group">
+                    <label for="seatAvailabilityInput">Seat Availability:</label>
+                    <input type="number" class="form-control" id="seatAvailabilityInput" #seatAvailabilityInput>
+                  </div>
+                <button type="submit" class="btn btn-primary">Add Flight</button>
+              </form>
+             
+        </body>
+    </div>
+        
+
+</div>

@@ -1,0 +1,112 @@
+
+.text-area{
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(127, 1, 211);
+  text-align: center;
+  text-align: justify;
+  align-items: center;
+  left: 50%;
+  right: 50%;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+.table-forms { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+tr:nth-of-type(even) { 
+        background: darkgray; 
+}
+    
+
+th { 
+	background: gray; 
+	color: white; 
+	font-weight: bold; 
+	}
+th:hover{
+    background-color: #000;
+}
+td, th { 
+	padding: 10px; 
+	border: 2px solid black; 
+	text-align: left; 
+	font-size: 18px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 2px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 2px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+
+}
+.btn-book {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+  }
+  
+  /* Login form submit button hover effect */
+  .btn-book:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+  .bouncing-image {
+    position: absolute;
+    bottom: 85px;
+   left: 10px;
+   width: 150px;
+   height: 150px;
+    animation: bounce 2s infinite;
+  }
+   @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  

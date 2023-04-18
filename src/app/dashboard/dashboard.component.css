@@ -1,0 +1,44 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(35, 35, 35, 0.6), rgba(41, 40, 40, 0.6)),
+      url("src/assets/image/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  

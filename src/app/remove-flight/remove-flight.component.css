@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+.container-1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(35, 35, 35, 0.6), rgba(41, 40, 40, 0.6)),
+      url("src/assets/image/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+body {
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box}
+.container {
+    padding: 20px;
+    width:500px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:transparent;
+    max-height: 500px;
+    overflow-y: auto;
+
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  }
+
+
+  .text-center h2{
+    color: #0069d9;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="date"], input[type="time"]{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f7f7f7;
+        font-family: Montserrat,Arial, Helvetica, sans-serif;
+      }
+  
+      input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus{
+        background-color: #ddd;
+        outline: none;
+      }
+  button[type="submit"] {
+    background-color: gray;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: black;
+  }
+  
